@@ -1,4 +1,4 @@
 def matchtask(file, task):
-    print_string = file['path'] + ':' + task['action']['__ansible_module__']
+    print_string = file['path'] + ':' + task['action']['__ansible_module__']['tasks']
     print(print_string)
     return False
