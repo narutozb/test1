@@ -13,6 +13,5 @@ class GetModuleName(AnsibleLintRule):
 
 
 	def matchtask(self,file,task):
-	    print_string = file['path'] + ':' + task['action']['__ansible_module__']['tasks']
-	    print(print_string)
+	    print file['path'], ':', task['action']['__ansible_module__']['tasks']
 	    return False
